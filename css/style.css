@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --mobile-size: 375px;
+  --desktop-size: 1440px;
+
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-gray: hsl(212, 45%, 89%);
+  --clr-grayish-blue: hsl(220, 15%, 55%);
+  --clr-dark-blue: hsl(218, 44%, 22%);
+  --font-size: 15px;
+
+  --ff-main: "Outfit", sans-serif;
+  --weight-400: 400;
+  --weight-700: 700;
+
+  --br-rad:1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-color: var(--clr-light-gray);
+  font-family: var(--ff-main);
+  font-size: var(--font-size);
+  font-weight: var(--weight-400);
+  color: var(--clr-grayish-blue);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+
+  min-width: var(--mobile-size);
+}
+
+main {
+  margin: 0 27px 0 28px;
+}
+
+.card {
+  background-color: var(--clr-white);
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  border-radius: var(--br-rad);
+
+  max-width: 320px;
+}
+
+.card__img img {
+  border-radius: var(--br-rad);
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding-bottom: 40px;
+}
+
+.card__content h2 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--clr-dark-blue);
+}
+
+.card__content p {
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.1875px;
+  color: var(--clr-grayish-blue);
+
+  max-width: 256px;
+}
+
