@@ -47,6 +47,16 @@ main {
   margin: 0 27px 0 28px;
 }
 
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
 .card {
   background-color: var(--clr-white);
   padding: 16px;
