@@ -14,7 +14,7 @@
   --weight-400: 400;
   --weight-700: 700;
 
-  --br-rad:1rem;
+  --br-rad: 1rem;
 }
 
 *,
@@ -44,16 +44,16 @@ body {
 }
 
 main {
-  margin: 0 27px 0 28px;
+  margin: 5px 27px 0 28px;
 }
 
 .sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
+  clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
-  white-space: nowrap; 
+  white-space: nowrap;
   width: 1px;
 }
 
@@ -94,8 +94,6 @@ main {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.1875px;
-  color: var(--clr-grayish-blue);
 
   max-width: 256px;
 }
-
